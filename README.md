@@ -1,6 +1,6 @@
 # Optional Settings
-it is recommended to add a huggingface directory and add
-```export HF_HOME="path/to/huggingface"```
+it is recommended to add a huggingface directory and add <br>
+```export HF_HOME="path/to/huggingface"``` <br>
 to .bashrc
 
 # Prereqeuisites
@@ -19,5 +19,5 @@ in a seperate folder as transcripts_results/{filename}.txt.
 
 # Singular file processing
 The whisper_test.py script can also be called manually on singular files.
-To do this run:
-```python whisper_test.py {filename}.mp3 {save_folder} ```
+To do this run: <br>
+```python whisper_test.py {filename}.mp3 {save_folder} ``` <br>
