@@ -1,0 +1,18 @@
+it is recommended to add a huggingface directory and add
+`export HF_HOME="path/to/huggingface"`
+to .bashrc
+
+Both Bashs cripts work out of the respective data folders, so they have to be moved/copied
+there manually.
+
+The default filetype of the audio files downloaded from ilias is .m4a,
+the convert_m4a.sh shellscript automatically converts all *.m4a files in it's
+directory to mp3 files and puts them in the folder data_mp3/ .
+
+The run_on_all.sh Shellscript takes all mp3 files in it's folder,
+runs the transciption model on them and saves the transcription files
+in a seperate folder as transcripts_results/{filename}.txt.
+
+The whisper_test.py script can also be called manually on singular files.
+To do this run:
+`python whisper_test.py {filename}.mp3 {save_folder} `
