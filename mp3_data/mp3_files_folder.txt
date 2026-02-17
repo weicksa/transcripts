@@ -1,0 +1,2 @@
+place mp3 files for transcription here.
+Also place run_on_all.sh here.
