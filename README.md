@@ -1,14 +1,15 @@
+# Optional Settings
 it is recommended to add a huggingface directory and add
 ```export HF_HOME="path/to/huggingface"```
 to .bashrc
 
-# Prerqeuisits
+# Prereqeuisites
 Both Bash scripts work out of the respective data folders, so they have to be moved/copied
 there manually.
 
 # Preprocessing
-The default filetype of the audio files downloaded from ilias is .m4a,
-the convert_m4a.sh shellscript automatically converts all *.m4a files in it's
+The default filetype of the audio files downloaded from ilias is .m4a.
+The convert_m4a.sh shellscript automatically converts all *.m4a files in it's
 directory to mp3 files and puts them in the folder data_mp3/ .
 
 # Batch processing
