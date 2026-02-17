@@ -34,12 +34,14 @@ def run_model_on_file(data, model="openai/whisper-large-v3-turbo"):
 if __name__ == "__main__":
 
     data = sys.argv[1]
-    print(data)
+    save_folder = sys.argv[2]
+
+    name = data[:-4]
 
     print("--- Running Whisper ---")
     result = run_model_on_file(data)
-    with open(f"{data}_transcript.txt", "w") as output:
+    name = data[:-4]
+    print(name)
+    with open(f"{save_folder}/{name}_transcript.txt", "w") as output:
         output.write(result["text"])
         print("--- Saved transcript ---")
-
-    print(result["text"])
