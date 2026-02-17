@@ -27,7 +27,7 @@ def run_model_on_file(data, model="openai/whisper-large-v3-turbo"):
         device=device,
     )
 
-    result = pipe(data)
+    result = pipe(data, return_timestams=True)
     return result
 
 
