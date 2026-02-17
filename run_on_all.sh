@@ -3,5 +3,5 @@
 mkdir ../transcripts_results
 for f in *.mp3;
 do
-  python ../whisper_test.py ${f%.mp3}.mp3 ../transcripts_results;
+  python ../run_whisper.py ${f%.mp3}.mp3 ../transcripts_results;
 done
