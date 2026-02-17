@@ -18,6 +18,6 @@ runs the transciption model on them and saves the transcription files
 in a seperate folder as transcripts_results/{filename}.txt.
 
 # Singular file processing
-The whisper_test.py script can also be called manually on singular files.
+The run_whisper.py script can also be called manually on singular files.
 To do this run: <br>
-```python whisper_test.py {filename}.mp3 {save_folder} ``` <br>
+```python run_whisper.py {filename}.mp3 {save_folder} ``` <br>
